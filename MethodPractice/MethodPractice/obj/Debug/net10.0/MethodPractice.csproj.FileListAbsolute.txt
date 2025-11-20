@@ -12,3 +12,4 @@
 /Users/zarifababayeva/Desktop/MethodPractice/MethodPractice/MethodPractice/obj/Debug/net10.0/MethodPractice.pdb
 /Users/zarifababayeva/Desktop/MethodPractice/MethodPractice/MethodPractice/obj/Debug/net10.0/MethodPractice.genruntimeconfig.cache
 /Users/zarifababayeva/Desktop/MethodPractice/MethodPractice/MethodPractice/obj/Debug/net10.0/ref/MethodPractice.dll
+/Users/zarifababayeva/Desktop/MethodPractice/MethodPractice/MethodPractice/obj/Debug/net10.0/MethodPractice.sourcelink.json

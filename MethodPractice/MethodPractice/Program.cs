@@ -14,6 +14,16 @@ class Program
         // Console.WriteLine(SumThreeElements(10, 20, 30));
         // Console.WriteLine(CompareTwoElements(20,15));
         // Console.WriteLine(CompareTwoElements(10, 2));
+        // int[] array = { 3, 7, 8 };
+        // Console.WriteLine(SumOfArrayElements(array));
+        
+        // int [] result =AddElementTwoArray(new int[] { 33, 44 }, 66);
+        // foreach (int num in result)
+        //     Console.WriteLine(num);
+        
+
+
+
     }
 
     public static void PrintHello()
@@ -47,4 +57,36 @@ class Program
     {
         return a > b;
     }
+
+    public static int SumOfArrayElements(int[] array)
+    {
+        int sum = 0;
+        foreach (int num in array)
+            sum += num;
+        return sum;
+    }
+
+
+    public static string RemoveSpace(String text)
+    {
+        string newText=String.Empty;
+        foreach (char symbol in text)
+        {
+            if (symbol != ' ')
+               newText+=symbol; 
+        }
+
+        return newText;
+    }
+
+    public static int [] AddElementTwoArray(int[] array, int num)
+    {
+        int[] newArray = new int [array.Length + 1];
+        for (int i=0; i<array.Length; i++)
+            newArray[i] = array[i];
+        newArray[newArray.Length-1] = num;
+        return newArray;
+
+    }
+    
 }
