@@ -20,8 +20,9 @@ class Program
         // int [] result =AddElementTwoArray(new int[] { 33, 44 }, 66);
         // foreach (int num in result)
         //     Console.WriteLine(num);
-        
-
+       // PrintArrayElements("Zarifa","Babayeva","Telman");
+       // Console.WriteLine(Sum(8));
+       
 
 
     }
@@ -87,6 +88,17 @@ class Program
         newArray[newArray.Length-1] = num;
         return newArray;
 
+    }
+
+    public static void PrintArrayElements(params string[] names)
+    {
+        foreach (string name in names)
+            Console.WriteLine(name);
+    }
+
+    public static int Sum(int e, int r=66)
+    {
+        return e + r;
     }
     
 }
