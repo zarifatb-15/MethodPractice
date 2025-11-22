@@ -22,7 +22,10 @@ class Program
         //     Console.WriteLine(num);
        // PrintArrayElements("Zarifa","Babayeva","Telman");
        // Console.WriteLine(Sum(8));
-       
+       int num = 70;
+       ChangeNum(ref num);
+       Console.WriteLine(num);
+
 
 
     }
@@ -100,5 +103,17 @@ class Program
     {
         return e + r;
     }
-    
+
+
+    public static void ChangeNum(ref int n)
+    {
+        
+        Console.WriteLine(n);
+    }
+
+    public static void ChangeArr(int[] numbers)
+    {
+       
+        Console.WriteLine(numbers[0]);
+    }
 }
