@@ -1,4 +1,7 @@
-﻿namespace MethodPractice;
+﻿using System.Globalization;
+using System.Text;
+
+namespace MethodPractice;
 
 class Program
 {
@@ -22,12 +25,43 @@ class Program
         //     Console.WriteLine(num);
        // PrintArrayElements("Zarifa","Babayeva","Telman");
        // Console.WriteLine(Sum(8));
-       int num = 70;
-       ChangeNum(ref num);
-       Console.WriteLine(num);
-
-
-
+       // int num = 70;
+       // ChangeNum(ref num);
+       // Console.WriteLine(num);
+       //String Methods
+       string str ="Hello, Zarifa!";
+       // string str2 = str;
+       // str2 = " ";
+       // Console.WriteLine(str);
+       // ReverseStr("Zarifa");
+       // Console.WriteLine(ReverseStr("Zarifa"));
+       // Console.WriteLine(ReverseStr("Zarifa!"));
+       // Console.WriteLine(str.Length);
+       // CultureInfo cultureInfo=new CultureInfo("az-Latn-AZ");
+       // Console.WriteLine(str.ToUpper(cultureInfo));
+       // Console.WriteLine(str.ToLower());
+       // Console.WriteLine(str.ToUpperInvariant());
+       // Console.WriteLine(str.ToLowerInvariant());
+       // Console.WriteLine("Zarifa" == "zarifa");
+       // Console.WriteLine("Zarifa".ToUpper() == "zarifa".ToUpper());
+       // Console.WriteLine(str.Contains('Z'));
+       // Console.WriteLine(str.Contains("zari",StringComparison.OrdinalIgnoreCase));
+       // Console.WriteLine(str.StartsWith('A'));
+       // Console.WriteLine(str.StartsWith("he",StringComparison.OrdinalIgnoreCase));
+       // Console.WriteLine(str.EndsWith("he",StringComparison.OrdinalIgnoreCase));
+       // Console.WriteLine(str.Trim());
+       // Console.WriteLine(str.TrimStart());
+       // Console.WriteLine(str.TrimEnd());
+       // Console.WriteLine(str.Replace(',','.'));
+       // Console.WriteLine(str.Replace("Zarifa","Zarifaaaaa"));
+       // Console.WriteLine(str.IndexOf('Z'));
+       // Console.WriteLine(str.LastIndexOf('a'));
+       // Console.WriteLine(str.IndexOf("Za",4));
+       // Console.WriteLine(str.CompareTo());
+       Console.WriteLine(str.Equals("Hello"));
+       string text = "  Hello   World  !  ";
+       Console.WriteLine(RemoveSpace(text));
+       
     }
 
     public static void PrintHello()
@@ -115,5 +149,27 @@ class Program
     {
        
         Console.WriteLine(numbers[0]);
+    }
+
+    // public static string ReverseStr(string str)
+    // {
+    //     string newStr = "";
+    //     for (int i = str.Length - 1; i >= 0; i--)
+    //     {
+    //         newStr += str[i];
+    //     }
+    //
+    //     return newStr;
+    // }
+    
+    public static string ReverseStr(string str)
+    {
+        StringBuilder stringbuilder= new StringBuilder();
+        for (int i = str.Length - 1; i >= 0; i--)
+        {
+            stringbuilder.Append(str[i]);
+        }
+
+        return stringbuilder.ToString();
     }
 }
